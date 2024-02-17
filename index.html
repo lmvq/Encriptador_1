@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-compatible" content="EI=edge">
+        <link rel="icon" href="img/icon-title.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="nuw-style.css">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <title>Encriptador</title>
+    </head>
+    <body>
+        <header>
+          <img  id="logo-principal" src="img/Logo.png" alt="este es nuestro logo principal">
+        </header>
+        <main>
+            <div class="container">
+                <div class="encriptador">
+                    <textarea name="texto" class="texto" id="ingresoTexto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                </div>
+                <div class="terminos">
+                    <img src="img/Vector.png" alt="este es el logo de los terminos">
+                    <p>Solo letras minusculas y sin acentos</p>
+                </div>
+                <div class="botones">
+                    <input type="button" class="btn-encriptar" value=" Encriptar" id="btnEncriptar" onclick="encriptar()"/>
+                    <input type="button" id="btnDesencriptar" class="btn-desencriptar" value="Desencriptar" onclick="desencriptar()"/>
+                </div>
+                <div class="encriptado">
+                    <img src="img/Muñeco.png" alt="este es la imagen del muñeco" id="muñeco">
+                    <div class="mensaje-encriptado" id="mensaje-encriptado">
+                        <h2 id="titulo-mensaje" class="tituloMensaje">Ningun mensaje fue encontrado</h2>
+                        <p id="parrafo">Ingresa el texto que deseas encriptar o<br> desencriptar</p>
+                        <button class="btn-copiar" id="btnCopiar" type="button" onclick="copiar()"  >Copiar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="pie-pagina">
+            <p>Hecho con <span class="corazon">❤</span> por <span>Luis Martinez</span> | &copy; 2024</p>
+        </footer>
+    </body>
+    <script src="script.js"></script>
+</html>
